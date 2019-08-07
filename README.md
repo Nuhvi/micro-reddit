@@ -1,6 +1,6 @@
 # Ruby on Rails micro reddit
 
-Ruby on Rails sample app excercise following [Michael Hartl](http://www.michaelhartl.com/) tutorial.
+Ruby on Rails sample app excercise following [Michael Hartl](http://www.michaelhartl.com/)  tutorial.
 
 ## Getting started
 
