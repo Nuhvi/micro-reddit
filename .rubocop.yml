@@ -1,17 +1,19 @@
 AllCops:
   DisabledByDefault: true
 
-Rails/OutputSafety:
+# added according to https://medium.com/guardrails/securing-your-ruby-and-rails-applications-with-rubocop-4606641db02b
+
+require: rubocop-gitlab-security
+
+GitlabSecurity/DeepMunge:
   Enabled: true
-Bundler/InsecureProtocolSource:
+GitlabSecurity/JsonSerialization:
   Enabled: true
-Security/Eval:
+GitlabSecurity/RedirectToParamsUpdate:
   Enabled: true
-Security/JSONLoad:
+GitlabSecurity/SendFileParams:
   Enabled: true
-Security/MarshalLoad:
+GitlabSecurity/SqlInjection:
   Enabled: true
-Security/Open:
-  Enabled: true
-Security/YAMLLoad:
+GitlabSecurity/SystemCommandInjection:
   Enabled: true
