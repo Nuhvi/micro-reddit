@@ -7,11 +7,11 @@ class PostTest < ActiveSupport::TestCase
     @post = Post.new
   end
 
-  test "validate title presence" do
+  test 'validate title presence' do
     assert_not @post.valid?
   end
 
-  test "validate content presence" do
+  test 'validate content presence' do
     assert_not @post.valid?
   end
 end
