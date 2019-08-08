@@ -3,4 +3,5 @@
 class User < ApplicationRecord
   validates :name, presence: true
   has_many :posts
+  has_many :comments, through: :posts, source: :posts
 end
