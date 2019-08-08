@@ -1,19 +1,12 @@
-AllCops:
-  DisabledByDefault: true
+inherit_from: .rubocop_todo.yml
 
-# added according to https://medium.com/guardrails/securing-your-ruby-and-rails-applications-with-rubocop-4606641db02b
+ 
+Metrics/LineLength:
+  Max: 120
 
-require: rubocop-gitlab-security
+Metrics/MethodLength:
+  Include: ["app/controllers/*"]
+  Max: 20
 
-GitlabSecurity/DeepMunge:
-  Enabled: true
-GitlabSecurity/JsonSerialization:
-  Enabled: true
-GitlabSecurity/RedirectToParamsUpdate:
-  Enabled: true
-GitlabSecurity/SendFileParams:
-  Enabled: true
-GitlabSecurity/SqlInjection:
-  Enabled: true
-GitlabSecurity/SystemCommandInjection:
-  Enabled: true
+Metrics/BlockLength:
+  ExcludedMethods: ['describe']

@@ -1,11 +1,12 @@
+# frozen_string_literal: true
+
 require 'test_helper'
 
 class UserTest < ActiveSupport::TestCase
   def setup
-    @user = User.new()
+    @user = User.new
   end
-  test "valid user" do
-
-    assert_not @user.valid? 
+  test 'valid user' do
+    assert_not @user.valid?
   end
 end
